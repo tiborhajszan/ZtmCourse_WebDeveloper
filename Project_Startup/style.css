@@ -3,7 +3,7 @@
 html, body {
   width: 100%;
   height: 100%;
-  background: url(header.jpg) no-repeat center center fixed; 
+  background: url(header.jpg) center center no-repeat fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -17,9 +17,7 @@ h1 {
 }
 
 hr {
-  max-width: 300px;
-  margin: 20px auto;
-  border: 2px solid orangered;
+  border: 3px solid orangered;
   color: orangered;
   opacity: 1;  
 }
@@ -37,7 +35,6 @@ hr {
 
 .btn-primary:hover {
   border-color: #912900;
-  border-width: 3px;
   background-color: #912900;
 }
 
