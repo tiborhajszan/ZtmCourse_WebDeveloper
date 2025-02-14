@@ -1,9 +1,19 @@
+/*
+ * Zero To Mastery Academy
+ * Complete Web Developer in 2025: Zero to Mastery
+ * CSS Grid + CSS Layout
+ */
 
 .container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-template-rows: 1fr;
     gap: 10px;
+}
+
+.green {
+    grid-column: span 2;
+    grid-row: span 2;
 }
 
 .zone {
