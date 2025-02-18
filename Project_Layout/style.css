@@ -6,9 +6,16 @@
 
 body {
     margin: auto 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /*** navigation bar ***************************************************************************************************/
+
+.sticky {
+    width: 100%;
+    top: 0;
+    position: sticky;
+}
 
 .nav-top {
     display: flex;
@@ -52,6 +59,10 @@ a:hover {
     font-size: 2em;
 }
 
+.cover-container > img {
+    height: 50vh;
+}
+
 /*** content grid *****************************************************************************************************/
 
 .grid-container {
@@ -64,7 +75,7 @@ a:hover {
 .box {
     display: flex;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 10px;
     padding: 25%;
     background-color: #555;
     align-items: center;
@@ -117,17 +128,17 @@ footer {
     background: linear-gradient(top, #C655BE 0%, #cf0404 100%); /* W3C */
 }
 
-/***********************************************************************
- *  Yellow Background
- **********************************************************************/
+/*** yellow gradient background ***************************************************************************************/
+
 .yellow{
-    background: #F3AAAA; /* Old browsers */
-    background: -moz-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3AAAA), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* IE10+ */
-    background: linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* W3C */
+    background: #F3AAAA; /* old browsers */
+    /* chrome, safari 4+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3AAAA), color-stop(100%,#febf04)); 
+    background: -webkit-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* chrome 10+, safari 5.1+ */
+    background: -moz-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* firefox 3.6+ */
+    background: -o-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* internet explorer 10+ */
+    background: linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* W3C */
 }
 
 /***********************************************************************
