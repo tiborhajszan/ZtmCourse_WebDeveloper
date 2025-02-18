@@ -52,6 +52,15 @@ a {
     text-decoration: none;
 }
 
+/*** cover ************************************************************************************************************/
+
+.container {
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+}
+
 /*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
 /***********************************************************************
  *  Green Background
