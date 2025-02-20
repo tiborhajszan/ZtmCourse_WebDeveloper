@@ -4,30 +4,35 @@
 
 // user database -------------------------------------------------------------------------------------------------------
 
-var userDatabase = [
-    {username: "thajszan", password: "booboo"}
+var userDb = [
+    {username: "thajszan", password: "booboo"},
+    {username: "tim", password: "whatever"},
+    {username: "sally", password: "777"}
 ];
 
 // newsfeed database ---------------------------------------------------------------------------------------------------
 
 var newsFeed = [
-    {username: "hugh", timeline: "JavaScript is cool!"},
-    {username: "angelina", timeline: "JavaScript is pretty cool!"},
-    {username: "chris", timeline: "JavaScript is friggin cool!"}
+    {username: "thajszan", timeline: "JavaScript is cool!"},
+    {username: "tim", timeline: "JavaScript is pretty cool!"},
+    {username: "sally", timeline: "JavaScript is friggin cool!"}
 ];
 
 // signin function -----------------------------------------------------------------------------------------------------
 
 function signIn(username, password) {
-    if (username === userDatabase[0].username && password === userDatabase[0].password) {
-        console.log(newsFeed);
-    } else {
-        alert("Wrong username and/or password!");
+    for (var index = 0; index < userDb.length; index++) {
+        if (username === userDb[index].username && password === userDb[index].password) {
+            console.log(newsFeed);
+            return
+        }
     }
+    alert("Wrong username and/or password!");
+    return
 }
 
 // login script --------------------------------------------------------------------------------------------------------
 
-var username = prompt("Enter your username:");
-var password = prompt("Enter your password:");
-signIn(username, password);
+var userName = prompt("Enter your username:");
+var passWord = prompt("Enter your password:");
+signIn(userName, passWord);
