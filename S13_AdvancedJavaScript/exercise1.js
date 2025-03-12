@@ -36,7 +36,7 @@ function q4() {
     alert(a); // test
 }
 
-// #5
+// #5: with var keyword, if statements do not create new scope
 var a = 2;
 if (true) {
     var a = 5;
