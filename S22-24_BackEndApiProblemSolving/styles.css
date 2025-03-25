@@ -1,14 +1,16 @@
 /*
- * Zero To Mastery Academy
- * Complete Web Developer in 2025: Zero to Mastery
- * Application Programming Interface :: Chuck Norris Jokes :: Styles
- */
+Zero To Mastery Academy
+Complete Web Developer in 2025: Zero to Mastery
+Application Programming Interface :: Chuck Norris Jokes :: Styles
+*/
 
-/* body {
-    font-family: Arial, sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+html, body {
     margin: 0;
     padding: 0;
-} */
+    font-family: "Roboto", Arial, sans-serif;
+}
 
 /* header {
     background-color: #333;
@@ -50,12 +52,13 @@
     padding: 2em;
 } */
 
-/* .chuck-image {
-    width: 200px;
-    height: 200px;
+.chuck-image {
+    display: block;
+    width: auto;
+    height: 300px;
     border-radius: 50%;
-    margin-bottom: 1em;
-} */
+    margin: 0 auto 40px;
+}
 
 #joke-text {
     max-width: 800px;
