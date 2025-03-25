@@ -1,0 +1,92 @@
+/*
+ * Zero To Mastery Academy
+ * Complete Web Developer in 2025: Zero to Mastery
+ * Application Programming Interface :: Chuck Norris Jokes :: Styles
+ */
+
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+} */
+
+/* header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+} */
+
+/* .nav-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: #333;
+    padding: 1em;
+} */
+
+/* .nav-toggle {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5em;
+    cursor: pointer;
+} */
+
+/* .nav-toggle:hover {
+    background-color: #444;
+} */
+
+/* main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+} */
+
+/* .chuck-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 1em;
+} */
+
+#joke-text {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    box-shadow: 0 0 30px 5px #8b4513;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #ffdead;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+/* #new-joke-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+} */
+
+/* #new-joke-btn:hover {
+    background-color: #444;
+} */
+
+/* footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+} */
