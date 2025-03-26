@@ -1,7 +1,7 @@
 /*
 Zero To Mastery Academy
 Complete Web Developer in 2025: Zero to Mastery
-Application Programming Interface :: Chuck Norris Jokes :: Styles
+Application Programming Interface :: Chuck Norris Jokes :: Webpage Styles
 */
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
@@ -56,14 +56,15 @@ html, body {
     display: block;
     width: auto;
     height: 300px;
+    margin: 0 auto 30px;
     border-radius: 50%;
-    margin: 0 auto 40px;
 }
 
 #joke-text {
     max-width: 800px;
-    margin: 0 auto 40px;
-    box-shadow: 0 0 30px 5px #8b4513;
+    margin: 0 auto 30px;
+    box-shadow: 0 0 15px #8b4513;
+    border: none;
     border-radius: 10px;
     padding: 20px;
     background-color: #ffdead;
@@ -71,20 +72,30 @@ html, body {
     line-height: 1.5;
     font-size: 32px;
     font-style: italic;
-    font-weight: 600;
+    font-weight: 700;
 }
 
-/* #new-joke-btn {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 0.5em 1em;
-    cursor: pointer;
-} */
+#joke-text:hover {
+    box-shadow: 0 0 30px #8b4513;
+}
 
-/* #new-joke-btn:hover {
-    background-color: #444;
-} */
+#joke-btn {
+    display: block;
+    margin: 0 auto 30px;
+    border: none;
+    border-radius: 32px;
+    padding: 20px;
+    background-color: #a0522d;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#joke-btn:hover {
+    background-color: #f5deb3;
+    color: #000;
+}
 
 /* footer {
     background-color: #333;
