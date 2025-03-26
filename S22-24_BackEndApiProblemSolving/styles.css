@@ -52,18 +52,24 @@ html, body {
     padding: 2em;
 } */
 
-.chuck-image {
+#chuck-image {
     display: block;
     width: auto;
     height: 300px;
     margin: 0 auto 30px;
     border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+}
+
+#chuck-image:hover {
+    box-shadow: 5px 5px 30px #8b4513;
+    transform: scale(1.1);
 }
 
 #joke-text {
     max-width: 800px;
     margin: 0 auto 30px;
-    box-shadow: 0 0 15px #8b4513;
+    box-shadow: 0 0 10px #8b4513;
     border: none;
     border-radius: 10px;
     padding: 20px;
@@ -73,6 +79,7 @@ html, body {
     font-size: 32px;
     font-style: italic;
     font-weight: 700;
+    transition: all 0.2s ease-in-out;
 }
 
 #joke-text:hover {
@@ -90,10 +97,11 @@ html, body {
     font-size: 24px;
     font-weight: 700;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
 }
 
 #joke-btn:hover {
-    background-color: #f5deb3;
+    background-color: #ffdead;
     color: #000;
 }
 
