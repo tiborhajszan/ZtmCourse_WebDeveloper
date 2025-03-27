@@ -12,14 +12,14 @@ html, body {
     font-family: "Roboto", Arial, sans-serif;
 }
 
-/* header {
+header {
     background-color: #333;
     color: #fff;
     padding: 1em;
     text-align: center;
-} */
+}
 
-/* .nav-menu {
+.nav-menu {
     display: none;
     position: fixed;
     top: 0;
@@ -28,9 +28,9 @@ html, body {
     height: 100vh;
     background-color: #333;
     padding: 1em;
-} */
+}
 
-/* .nav-toggle {
+.nav-toggle {
     position: absolute;
     top: 1em;
     left: 1em;
@@ -39,7 +39,7 @@ html, body {
     border: none;
     padding: 0.5em;
     cursor: pointer;
-} */
+}
 
 /* .nav-toggle:hover {
     background-color: #444;
@@ -105,10 +105,17 @@ html, body {
     color: #000;
 }
 
-/* footer {
-    background-color: #333;
-    color: #fff;
-    padding: 1em;
+/* footer ----------------------------------------------------------------------------------------------------------- */
+
+footer > hr {
+    max-width: 840px;
+    height: 3px;
+    margin-bottom: 30px;
+    border: none;
+    background-color: #d2b48c;
+}
+
+footer > p {
+    color: #d2b48c;
     text-align: center;
-    clear: both;
-} */
+}
