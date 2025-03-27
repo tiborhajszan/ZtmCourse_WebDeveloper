@@ -2,12 +2,14 @@
 // Complete Web Developer in 2025: Zero to Mastery
 // Application Programming Interface :: Chuck Norris Jokes :: Webpage Logic
 
-// chuck image > joke text > new joke button > API URL -----------------------------------------------------------------
+// DOM elements and API URL --------------------------------------------------------------------------------------------
 
+const navMenu = document.querySelector(".nav-menu");
+const navBtn = document.querySelector(".nav-btn");
 const chuckImage = document.getElementById("chuck-image");
+const apiUrl = "https://api.chucknorris.io/jokes/random";
 const jokeText = document.getElementById("joke-text");
 const jokeBtn = document.getElementById("joke-btn");
-const apiUrl = "https://api.chucknorris.io/jokes/random";
 
 // chuck image inits ---------------------------------------------------------------------------------------------------
 
@@ -36,8 +38,9 @@ async function getNewJoke() {
     }
 }
 
-// adding event listener to new joke button ----------------------------------------------------------------------------
+// adding event listeners ----------------------------------------------------------------------------------------------
 
+navBtn.addEventListener("click", () => {navMenu.classList.toggle("open");});
 jokeBtn.addEventListener("click", getNewJoke);
 
 // fetching joke on page load ------------------------------------------------------------------------------------------
