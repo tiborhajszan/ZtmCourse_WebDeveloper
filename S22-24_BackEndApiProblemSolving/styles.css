@@ -12,7 +12,12 @@ html, body {
     font-family: "Roboto", Arial, sans-serif;
 }
 
+/* header and navigation menu --------------------------------------------------------------------------------------- */
+
 header {
+    position: relative;
+    max-width: 840px;
+    margin: 0 auto 30px;
     background-color: #333;
     color: #fff;
     padding: 1em;
@@ -20,17 +25,38 @@ header {
 }
 
 .nav-menu {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 200px;
-    height: 100vh;
-    background-color: #333;
-    padding: 1em;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 280px;
+    height: 90vh;
+    padding: 20px;
+    background-color: #d2b48c;
+    opacity: 1;
 }
 
-.nav-toggle {
+.nav-menu > a {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nav-menu > a:hover {
+    color: #f5deb3;
+}
+
+.nav-menu > hr {
+    height: 2px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: #f5deb3;
+}
+
+/* .nav-toggle {
     position: absolute;
     top: 1em;
     left: 1em;
@@ -39,18 +65,13 @@ header {
     border: none;
     padding: 0.5em;
     cursor: pointer;
-}
+} */
 
 /* .nav-toggle:hover {
     background-color: #444;
 } */
 
-/* main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2em;
-} */
+/* main content ----------------------------------------------------------------------------------------------------- */
 
 #chuck-image {
     display: block;
