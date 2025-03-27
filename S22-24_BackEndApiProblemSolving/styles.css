@@ -12,22 +12,50 @@ html, body {
     font-family: "Roboto", Arial, sans-serif;
 }
 
-/* header and navigation menu --------------------------------------------------------------------------------------- */
+/* header ------------------------------------------------------------------------------------------------------------*/
 
 header {
     position: relative;
-    max-width: 840px;
+    max-width: 728px;
     margin: 0 auto 30px;
+    padding: 20px;
     background-color: #333;
-    color: #fff;
-    padding: 1em;
-    text-align: center;
+    color: #f5deb3;
 }
+
+header > h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.exit-btn, .nav-btn {
+    position: absolute;
+    top: 14px;
+    border: none;
+    padding: 0;
+    background-color: #333;
+    color: #f5deb3;
+    font-size: 48px;
+    cursor: pointer;
+}
+
+.exit-btn {
+    left: 20px;
+}
+
+.nav-btn {
+    right: 20px;
+}
+
+/* navigation menu ---------------------------------------------------------------------------------------------------*/
 
 .nav-menu {
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 80px;
+    right: 20px;
     width: 280px;
     height: 90vh;
     padding: 20px;
@@ -62,17 +90,6 @@ header {
     border: none;
     background-color: #f5deb3;
 }
-
-/* .nav-toggle {
-    position: absolute;
-    top: 1em;
-    left: 1em;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 0.5em;
-    cursor: pointer;
-} */
 
 /* .nav-toggle:hover {
     background-color: #444;
