@@ -15,9 +15,11 @@ html, body {
 /* header ------------------------------------------------------------------------------------------------------------*/
 
 header {
-    position: relative;
+    position: sticky;
+    top: 0;
     max-width: 728px;
     margin: 0 auto 30px;
+    box-shadow: 0 3px 5px #8b4513;
     padding: 20px;
     background-color: #333;
     color: #f5deb3;
