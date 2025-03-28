@@ -178,5 +178,6 @@ footer > p > a {
 }
 
 footer > p > a:hover {
+    color: blue;
     text-decoration: underline;
 }
