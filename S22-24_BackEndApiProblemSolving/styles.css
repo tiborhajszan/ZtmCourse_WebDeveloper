@@ -1,8 +1,8 @@
-/*
+/*----------------------------------------------------------------------------------------------------------------------
 Zero To Mastery Academy
 Complete Web Developer in 2025: Zero to Mastery
 Application Programming Interface :: Chuck Norris Jokes :: Webpage Styles
-*/
+----------------------------------------------------------------------------------------------------------------------*/
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
@@ -152,15 +152,31 @@ header > h1 {
 
 /* footer ----------------------------------------------------------------------------------------------------------- */
 
+footer {
+    max-width: 768px;
+    margin: 0 auto;
+}
+
 footer > hr {
-    max-width: 840px;
-    height: 3px;
-    margin-bottom: 30px;
+    height: 2px;
+    margin: 0 0 30px;
     border: none;
     background-color: #d2b48c;
 }
 
 footer > p {
-    color: #d2b48c;
+    margin: 0 0 15px;
+    padding: 0;
     text-align: center;
+    color: #d2b48c;
+    font-size: 16px;
+}
+
+footer > p > a {
+    color: #d2b48c;
+    text-decoration: none;
+}
+
+footer > p > a:hover {
+    text-decoration: underline;
 }
