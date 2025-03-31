@@ -70,9 +70,9 @@ header > h1 {
     position: absolute;
     top: 80px;
     left: 10px;
-    width: 708px;
+    width: 688px;
     height: 75vh;
-    padding: 20px;
+    padding: 20px 30px;
     background-color: #d2b48c;
     opacity: 0;
     transition: opacity 0.333s ease-in-out;
@@ -86,8 +86,8 @@ header > h1 {
 
 .nav-menu > a {
     display: block;
-    margin-bottom: 20px;
-    text-align: center;
+    padding: 10px 0;
+    text-align: left;
     color: #000;
     font-size: 24px;
     font-weight: 700;
@@ -95,7 +95,11 @@ header > h1 {
 }
 
 .nav-menu > a:hover {
-    color: #f5deb3;
+    background-color: #f5deb3;
+}
+
+.nav-menu > a:active {
+    color: #fff;
 }
 
 .nav-menu > hr {
