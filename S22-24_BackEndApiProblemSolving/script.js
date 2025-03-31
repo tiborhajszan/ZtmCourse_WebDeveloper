@@ -6,6 +6,7 @@
 
 const navMenu = document.querySelector(".nav-menu");
 const navBtn = document.querySelector(".nav-btn");
+const navClose = document.getElementById("nav-close");
 const chuckImage = document.getElementById("chuck-image");
 const apiUrl = "https://api.chucknorris.io/jokes/random";
 const jokeText = document.getElementById("joke-text");
@@ -41,6 +42,7 @@ async function getNewJoke() {
 // adding event listeners ----------------------------------------------------------------------------------------------
 
 navBtn.addEventListener("click", () => {navMenu.classList.toggle("open");});
+navClose.addEventListener("click", () => {navMenu.classList.toggle("open");});
 jokeBtn.addEventListener("click", getNewJoke);
 
 // fetching joke on page load ------------------------------------------------------------------------------------------
