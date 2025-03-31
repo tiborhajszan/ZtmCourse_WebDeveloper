@@ -102,9 +102,14 @@ header > h1 {
     color: #fff;
 }
 
+.nav-menu > a > p {
+    white-space: pre-wrap;
+    margin: 0;
+}
+
 .nav-menu > hr {
     height: 2px;
-    margin-bottom: 20px;
+    margin: 10px 0;
     border: none;
     background-color: #f5deb3;
 }
