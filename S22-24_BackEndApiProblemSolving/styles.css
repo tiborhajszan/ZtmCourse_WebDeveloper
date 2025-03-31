@@ -69,9 +69,9 @@ header > h1 {
 .nav-menu {
     position: absolute;
     top: 80px;
-    right: 20px;
-    width: 280px;
-    height: 90vh;
+    left: 10px;
+    width: 708px;
+    height: 75vh;
     padding: 20px;
     background-color: #d2b48c;
     opacity: 0;
@@ -104,10 +104,6 @@ header > h1 {
     border: none;
     background-color: #f5deb3;
 }
-
-/* .nav-toggle:hover {
-    background-color: #444;
-} */
 
 /* main content ----------------------------------------------------------------------------------------------------- */
 
