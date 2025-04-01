@@ -94,20 +94,20 @@ header > h1 {
     text-decoration: none;
 }
 
+.nav-menu > a:nth-of-type(4) > p > i {
+    color: #0962ac;
+}
+
+.nav-menu > a:last-child > p > i {
+    color: red;
+}
+
 .nav-menu > a:hover {
     background-color: #f5deb3;
 }
 
 .nav-menu > a:active {
-    color: #fff;
-}
-
-#nav-close {
-    color: red;
-}
-
-#nav-close:active {
-    color: #fff;
+    background-color: #fff;
 }
 
 .nav-menu > a > p {
