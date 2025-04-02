@@ -4,7 +4,7 @@
 
 // DOM elements and API URL --------------------------------------------------------------------------------------------
 
-const navBtn = document.querySelector(".nav-btn");
+const navBtn = document.getElementById("nav-btn");
 const navMenu = document.getElementById("nav-menu");
 const navClose = document.getElementById("nav-close");
 const chuckImage = document.getElementById("chuck-image");

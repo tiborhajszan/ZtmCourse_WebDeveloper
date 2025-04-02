@@ -22,46 +22,50 @@ header {
     box-shadow: 0 3px 5px #8b4513;
     padding: 20px;
     background-color: #333;
-    color: #f5deb3;
 }
 
 header > h1 {
     margin: 0;
     padding: 0;
     text-align: center;
+    color: #f5deb3;
     font-size: 48px;
     font-weight: 700;
 }
 
-.exit-btn, .nav-btn {
+.exit-btn, #nav-btn {
     position: absolute;
-    top: 26px;
     margin: 0;
     border: none;
     padding: 0;
     background-color: #333;
-    color: #f5deb3;
     font-size: 32px;
-    text-decoration: none;
     cursor: pointer;
     transition: transform 0.1s ease-in-out;
 }
 
 .exit-btn {
+    top: 30px;
     left: 20px;
 }
 
-.nav-btn {
-    right: 20px;
+.exit-btn > a {
+    color: #f5deb3;
+    text-decoration: none;
 }
 
-.exit-btn:hover, .nav-btn:hover {
+#nav-btn {
+    top: 31px;
+    right: 20px;
+    color: #f5deb3;
+}
+
+.exit-btn:hover, #nav-btn:hover {
     transform: scale(1.5);
 }
 
-.exit-btn:active, .nav-btn:active {
+.exit-btn > a:active, #nav-btn:active {
     color: #fff;
-    text-shadow: 0 0 10px #fff;
 }
 
 /* navigation menu ---------------------------------------------------------------------------------------------------*/
