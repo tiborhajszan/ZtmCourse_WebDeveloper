@@ -55,7 +55,7 @@ header > h1 {
 }
 
 #nav-btn {
-    top: 31px;
+    top: 32px;
     right: 20px;
     color: #f5deb3;
 }
@@ -139,10 +139,11 @@ header > h1 {
     box-shadow: 0 0 10px #8b4513;
     border: none;
     border-radius: 50%;
-    transition: box-shadow 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 #chuck-image:hover {
+    transform: scale(1.1);
     box-shadow: 0 0 30px #8b4513;
 }
 
@@ -159,11 +160,6 @@ header > h1 {
     font-size: 32px;
     font-style: italic;
     font-weight: 700;
-    transition: box-shadow 0.2s ease-in-out;
-}
-
-#joke-text:hover {
-    box-shadow: 0 0 30px #8b4513;
 }
 
 #joke-btn {
@@ -178,11 +174,10 @@ header > h1 {
     font-size: 24px;
     font-weight: 700;
     cursor: pointer;
-    transition: box-shadow 0.2s ease-in-out;
 }
 
 #joke-btn:hover {
-    box-shadow: 0 0 30px #8b4513;
+    background-color: #8b4513;
 }
 
 #joke-btn:active {
