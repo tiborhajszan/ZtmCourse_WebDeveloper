@@ -4,8 +4,8 @@
 
 // DOM elements and API URL --------------------------------------------------------------------------------------------
 
-const navMenu = document.querySelector(".nav-menu");
 const navBtn = document.querySelector(".nav-btn");
+const navMenu = document.getElementById("nav-menu");
 const navClose = document.getElementById("nav-close");
 const chuckImage = document.getElementById("chuck-image");
 const apiUrl = "https://api.chucknorris.io/jokes/random";
@@ -42,7 +42,12 @@ async function getNewJoke() {
 // adding event listeners ----------------------------------------------------------------------------------------------
 
 navBtn.addEventListener("click", () => {navMenu.classList.toggle("open");});
-navClose.addEventListener("click", () => {navMenu.classList.toggle("open");});
+navClose.addEventListener("click", () => {navMenu.classList.remove("open");});
+document.addEventListener('click', (event) => {
+    if (!navMenu.contains(event.target) && !navBtn.contains(event.target)) {
+        navMenu.classList.remove('open');
+    }
+});
 jokeBtn.addEventListener("click", getNewJoke);
 
 // fetching joke on page load ------------------------------------------------------------------------------------------

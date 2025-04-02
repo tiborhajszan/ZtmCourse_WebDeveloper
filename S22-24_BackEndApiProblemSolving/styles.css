@@ -66,7 +66,7 @@ header > h1 {
 
 /* navigation menu ---------------------------------------------------------------------------------------------------*/
 
-.nav-menu {
+#nav-menu {
     position: absolute;
     top: 80px;
     left: 10px;
@@ -79,12 +79,12 @@ header > h1 {
     pointer-events: none;
 }
 
-.nav-menu.open {
+#nav-menu.open {
     opacity: 1;
     pointer-events: auto;
 }
 
-.nav-menu > a {
+#nav-menu > a {
     display: block;
     padding: 10px 0;
     text-align: left;
@@ -94,28 +94,31 @@ header > h1 {
     text-decoration: none;
 }
 
-.nav-menu > a:nth-of-type(4) > p > i {
-    color: #0962ac;
-}
-
-.nav-menu > a:last-child > p > i {
-    color: red;
-}
-
-.nav-menu > a:hover {
+#nav-menu > a:hover {
     background-color: #f5deb3;
 }
 
-.nav-menu > a:active {
+#nav-menu > a:active {
     background-color: #fff;
 }
 
-.nav-menu > a > p {
-    white-space: pre-wrap;
+#nav-menu > a > p {
     margin: 0;
 }
 
-.nav-menu > hr {
+#nav-menu > a > p > i {
+    margin-right: 15px;
+}
+
+#nav-menu > a:nth-of-type(4) > p > i {
+    color: #0962ac;
+}
+
+#nav-menu > a:last-of-type > p > i {
+    color: red;
+}
+
+#nav-menu > hr {
     height: 2px;
     margin: 10px 0;
     border: none;
