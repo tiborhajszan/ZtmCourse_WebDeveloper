@@ -22,7 +22,10 @@ header {
     box-shadow: 0 3px 5px #8b4513;
     padding: 20px;
     background-color: #333;
-}
+} @media only screen and (max-width: 768px) { header {
+    max-width: calc(425px - 40px);
+    margin: 0 auto 20px;
+}}
 
 header > h1 {
     margin: 0;
@@ -31,7 +34,9 @@ header > h1 {
     color: #f5deb3;
     font-size: 48px;
     font-weight: 700;
-}
+} @media only screen and (max-width: 768px) { header > h1 {
+    font-size: 24px;
+}}
 
 .exit-btn, #nav-btn {
     position: absolute;
@@ -42,12 +47,16 @@ header > h1 {
     font-size: 32px;
     cursor: pointer;
     transition: transform 0.1s ease-in-out;
-}
+} @media only screen and (max-width: 768px) { .exit-btn, #nav-btn {
+    font-size: 24px;
+}}
 
 .exit-btn {
     top: 30px;
     left: 20px;
-}
+} @media only screen and (max-width: 768px) { .exit-btn {
+    top: 20px;
+}}
 
 .exit-btn > a {
     color: #f5deb3;
@@ -58,7 +67,9 @@ header > h1 {
     top: 32px;
     right: 20px;
     color: #f5deb3;
-}
+} @media only screen and (max-width: 768px) { #nav-btn {
+    top: 21px;
+}}
 
 .exit-btn:hover, #nav-btn:hover {
     transform: scale(1.5);
@@ -160,7 +171,10 @@ header > h1 {
     font-size: 32px;
     font-style: italic;
     font-weight: 700;
-}
+} @media only screen and (max-width: 768px) { #joke-text {
+    width: calc(100% - 40px);
+    margin: 0 0 15px;
+}}
 
 #joke-btn {
     display: block;
