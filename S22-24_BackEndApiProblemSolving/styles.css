@@ -4,6 +4,8 @@ Complete Web Developer in 2025: Zero to Mastery
 Application Programming Interface :: Chuck Norris Jokes :: Webpage Styles
 ----------------------------------------------------------------------------------------------------------------------*/
 
+/* general styles ----------------------------------------------------------------------------------------------------*/
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 * {
@@ -16,49 +18,43 @@ html, body {
     font-family: "Roboto", Arial, sans-serif;
 }
 
-/* header ------------------------------------------------------------------------------------------------------------*/
+/* header bar --------------------------------------------------------------------------------------------------------*/
 
 header {
     position: sticky;
     top: 0;
-    max-width: 728px;
+    width: min(calc(100% - 40px), calc(768px - 40px));
     margin: 0 auto 30px;
     box-shadow: 0 3px 5px #8b4513;
     padding: 20px;
     background-color: #333;
-} @media only screen and (max-width: 768px) { header {
-    width: calc(100% - 40px);
+} @media only screen and (max-width: 600px) { header {
     margin: 0 auto 20px;
 }}
 
 header > h1 {
-    margin: 0;
-    padding: 0;
     text-align: center;
     color: #f5deb3;
     font-size: 48px;
     font-weight: 700;
-} @media only screen and (max-width: 768px) { header > h1 {
+} @media only screen and (max-width: 600px) { header > h1 {
     font-size: 24px;
 }}
 
 .exit-btn, #nav-btn {
     position: absolute;
-    margin: 0;
-    border: none;
-    padding: 0;
     background-color: #333;
     font-size: 32px;
-    cursor: pointer;
     transition: transform 0.1s ease-in-out;
-} @media only screen and (max-width: 768px) { .exit-btn, #nav-btn {
+    cursor: pointer;
+} @media only screen and (max-width: 600px) { .exit-btn, #nav-btn {
     font-size: 24px;
 }}
 
 .exit-btn {
     top: 30px;
     left: 20px;
-} @media only screen and (max-width: 768px) { .exit-btn {
+} @media only screen and (max-width: 600px) { .exit-btn {
     top: 20px;
 }}
 
@@ -71,7 +67,7 @@ header > h1 {
     top: 32px;
     right: 20px;
     color: #f5deb3;
-} @media only screen and (max-width: 768px) { #nav-btn {
+} @media only screen and (max-width: 600px) { #nav-btn {
     top: 21px;
 }}
 
