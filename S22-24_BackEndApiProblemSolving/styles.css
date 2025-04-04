@@ -86,16 +86,18 @@ header > h1 {
     top: 81px;
     left: 10px;
     width: min(calc(100% - 60px - 20px), calc(768px - 60px - 20px));
-    height: calc(100vh - 81px - 40px);
+    box-shadow: 7px 8px 15px #8b4513;
     padding: 20px 30px;
     background-color: #d2b48c;
+    opacity: 0;
     overflow-y: scroll;
     scrollbar-width: none;
     -ms-overflow-style: none;  
-    opacity: 0;
     transition: opacity 0.333s ease-in-out;
     pointer-events: none;
-} @media only screen and (max-width: 768px) { #nav-menu {
+} @media only screen and (max-height: calc(427px + 81px)) { #nav-menu {
+    height: calc(100vh - 81px - 40px);
+}} @media only screen and (max-width: 600px) { #nav-menu {
     top: 70px;
     left: 0;
     width: calc(100% - 60px);
@@ -119,7 +121,7 @@ header > h1 {
     font-size: 24px;
     font-weight: 700;
     text-decoration: none;
-} @media only screen and (max-width: 768px) { #nav-menu > a {
+} @media only screen and (max-width: 600px) { #nav-menu > a {
     font-size: 20px;
 }}
 
