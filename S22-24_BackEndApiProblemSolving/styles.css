@@ -87,16 +87,28 @@ header > h1 {
 
 #nav-menu {
     position: absolute;
-    top: 80px;
+    top: 81px;
     left: 10px;
-    width: 688px;
-    height: 75vh;
+    width: min(calc(100% - 60px - 20px), calc(768px - 60px - 20px));
+    height: calc(100vh - 81px - 40px);
     padding: 20px 30px;
     background-color: #d2b48c;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;  
     opacity: 0;
     transition: opacity 0.333s ease-in-out;
     pointer-events: none;
-}
+} @media only screen and (max-width: 768px) { #nav-menu {
+    top: 70px;
+    left: 0;
+    width: calc(100% - 60px);
+    height: calc(100vh - 70px - 40px);
+}}
+
+#nav-menu::-webkit-scrollbar {
+    display: none;
+  }  
 
 #nav-menu.open {
     opacity: 1;
@@ -111,7 +123,9 @@ header > h1 {
     font-size: 24px;
     font-weight: 700;
     text-decoration: none;
-}
+} @media only screen and (max-width: 768px) { #nav-menu > a {
+    font-size: 20px;
+}}
 
 #nav-menu > a:hover {
     background-color: #f5deb3;
@@ -119,10 +133,6 @@ header > h1 {
 
 #nav-menu > a:active {
     background-color: #fff;
-}
-
-#nav-menu > a > p {
-    margin: 0;
 }
 
 #nav-menu > a > p > i {
