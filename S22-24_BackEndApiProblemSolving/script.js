@@ -28,14 +28,14 @@ let chuckIndex = 0;
 
 async function getNewJoke() {
     try {
-        // cycling chuck image
+        // cycling chuck image .........................................................................................
         chuckIndex++;
         if (3 < chuckIndex) {chuckIndex = 0;}
         chuckImage.src = chuckImages[chuckIndex];
-        // fetching new joke
-        const response = await fetch(apiUrl);
-        const data = await response.json();
-        jokeText.textContent = data.value;
+        // fetching new joke ...........................................................................................
+        const apiResponse = await fetch(apiUrl);
+        const jokeData = await apiResponse.json();
+        jokeText.textContent = jokeData.value;
     } catch {
         jokeText.textContent = "Chuck lost his sense of humor... Please try again!";
     }
