@@ -4,8 +4,6 @@ Complete Web Developer in 2025: Zero to Mastery
 Application Programming Interface :: Chuck Norris Jokes :: Webpage Styles
 ----------------------------------------------------------------------------------------------------------------------*/
 
-/* general styles ----------------------------------------------------------------------------------------------------*/
-
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 * {
@@ -23,6 +21,7 @@ html, body {
 header {
     position: sticky;
     top: 0;
+    z-index: 1;
     width: min(calc(100% - 40px), calc(768px - 40px));
     margin: 0 auto 30px;
     box-shadow: 0 3px 5px #8b4513;
@@ -154,6 +153,10 @@ header > h1 {
 
 /* main content ----------------------------------------------------------------------------------------------------- */
 
+/* main {
+    position: relative;
+} */
+
 #chuck-image {
     display: block;
     width: auto;
@@ -162,16 +165,15 @@ header > h1 {
     box-shadow: 0 0 10px #8b4513;
     border-radius: 50%;
     transition: all 0.2s ease-in-out;
-} @media only screen and (max-width: 768px) { #chuck-image {
+} @media only screen and (max-width: 600px) { #chuck-image {
     height: 250px;
     margin: 0 auto 20px;
-    transition: none;
 }}
 
 #chuck-image:hover {
     transform: scale(1.1);
     box-shadow: 0 0 30px #8b4513;
-} @media only screen and (max-width: 768px) { #chuck-image:hover {
+} @media only screen and (max-width: 600px) { #chuck-image:hover {
     transform: none;
     box-shadow: 0 0 10px #8b4513;
 }}
