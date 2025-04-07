@@ -151,7 +151,7 @@ header > h1 {
     background-color: #f5deb3;
 }
 
-/* main content ----------------------------------------------------------------------------------------------------- */
+/* main content ------------------------------------------------------------------------------------------------------*/
 
 #chuck-image {
     display: block;
@@ -216,12 +216,12 @@ header > h1 {
     color: #000;
 }
 
-/* footer ----------------------------------------------------------------------------------------------------------- */
+/* footer ------------------------------------------------------------------------------------------------------------*/
 
 footer {
-    max-width: 768px;
+    width: min(100%, 768px);
     margin: 0 auto 30px;
-} @media only screen and (max-width: 768px) { footer {
+} @media only screen and (max-width: 600px) { footer {
     margin: 0 auto 20px;
 }}
 
@@ -229,7 +229,7 @@ footer > hr {
     height: 2px;
     margin: 0 0 30px;
     background-color: #d2b48c;
-} @media only screen and (max-width: 768px) { footer > hr {
+} @media only screen and (max-width: 600px) { footer > hr {
     margin: 0 0 20px;
 }}
 
@@ -238,7 +238,7 @@ footer > p {
     text-align: center;
     color: #a0522d;
     font-size: 16px;
-} @media only screen and (max-width: 768px) { footer > p {
+} @media only screen and (max-width: 600px) { footer > p {
     margin: 0 0 10px;
     font-size: 12px;
 }}
