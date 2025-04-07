@@ -153,10 +153,6 @@ header > h1 {
 
 /* main content ----------------------------------------------------------------------------------------------------- */
 
-/* main {
-    position: relative;
-} */
-
 #chuck-image {
     display: block;
     width: auto;
@@ -174,8 +170,7 @@ header > h1 {
     transform: scale(1.1);
     box-shadow: 0 0 30px #8b4513;
 } @media only screen and (max-width: 600px) { #chuck-image:hover {
-    transform: none;
-    box-shadow: 0 0 10px #8b4513;
+    box-shadow: 0 0 20px #8b4513;
 }}
 
 #joke-text {
@@ -190,8 +185,7 @@ header > h1 {
     font-size: 32px;
     font-style: italic;
     font-weight: 700;
-} @media only screen and (max-width: 768px) { #joke-text {
-    width: calc(100% - 40px - 15px);
+} @media only screen and (max-width: 600px) { #joke-text {
     margin: 0 auto 20px;
     font-size: 20px;
 }}
@@ -200,16 +194,16 @@ header > h1 {
     display: block;
     margin: 0 auto 30px;
     box-shadow: 0 0 10px #8b4513;
-    border-radius: 32px;
+    border-radius: 34px;
     padding: 20px;
     background-color: #a0522d;
     color: #fff;
     font-size: 24px;
     font-weight: 700;
     cursor: pointer;
-} @media only screen and (max-width: 768px) { #joke-btn {
+} @media only screen and (max-width: 600px) { #joke-btn {
     margin: 0 auto 20px;
-    border-radius: 30px;
+    border-radius: 31px;
     font-size: 20px;
 }}
 
