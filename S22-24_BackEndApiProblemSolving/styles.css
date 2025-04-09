@@ -16,6 +16,10 @@ html, body {
     font-family: "Roboto", Arial, sans-serif;
 }
 
+a, button {
+    -webkit-tap-highlight-color: transparent;
+}
+
 /* header bar --------------------------------------------------------------------------------------------------------*/
 
 header {
@@ -44,7 +48,7 @@ header > h1 {
     position: absolute;
     background-color: #333;
     font-size: 32px;
-    transition: transform 0.1s ease-in-out;
+    transition: transform 0.05s ease-in-out;
     cursor: pointer;
 } @media only screen and (max-width: 600px) { .exit-btn, #nav-btn {
     font-size: 24px;
@@ -70,12 +74,8 @@ header > h1 {
     top: 21px;
 }}
 
-.exit-btn:hover, #nav-btn:hover {
+.exit-btn:active, #nav-btn:active {
     transform: scale(1.5);
-}
-
-.exit-btn > a:active, #nav-btn:active {
-    color: #fff;
 }
 
 /* navigation menu ---------------------------------------------------------------------------------------------------*/
@@ -83,23 +83,24 @@ header > h1 {
 #nav-menu {
     position: absolute;
     top: 81px;
-    left: 10px;
-    width: min(calc(100% - 60px - 20px), calc(768px - 60px - 20px));
+    left: 50px;
+    width: min(calc(100% - 60px - 100px), calc(768px - 60px - 100px));
     box-shadow: 7px 8px 15px #8b4513;
     padding: 20px 30px;
-    background-color: #d2b48c;
-    opacity: 0;
     overflow-y: scroll;
     scrollbar-width: none;
     -ms-overflow-style: none;  
-    transition: opacity 0.333s ease-in-out;
+    background-color: #d2b48c;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
     pointer-events: none;
-} @media only screen and (max-height: calc(427px + 81px)) { #nav-menu {
+} @media only screen and (min-width: 601px) and (max-height: calc(81px + 427px)) { #nav-menu {
     height: calc(100vh - 81px - 40px);
 }} @media only screen and (max-width: 600px) { #nav-menu {
     top: 70px;
     left: 0;
     width: calc(100% - 60px);
+}} @media only screen and (max-width: 600px) and (max-height: calc(70px + 392px)) { #nav-menu {
     height: calc(100vh - 70px - 40px);
 }}
 
@@ -120,16 +121,17 @@ header > h1 {
     font-size: 24px;
     font-weight: 700;
     text-decoration: none;
+    transition: background-color 0.05s ease-in-out;
 } @media only screen and (max-width: 600px) { #nav-menu > a {
     font-size: 20px;
 }}
 
-#nav-menu > a:hover {
-    background-color: #f5deb3;
-}
+@media only screen and (min-width: 601px) { #nav-menu > a:hover {
+    background-color: rgba(245, 222, 179, 0.5);
+}}
 
 #nav-menu > a:active {
-    background-color: #fff;
+    background-color: #f5deb3;
 }
 
 #nav-menu > a > p > i {
