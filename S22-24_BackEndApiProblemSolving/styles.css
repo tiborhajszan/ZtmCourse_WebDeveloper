@@ -160,7 +160,7 @@ header > h1 {
     margin: 0 auto 30px;
     box-shadow: 0 0 10px #8b4513;
     border-radius: 50%;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
 } @media only screen and (max-width: 600px) { #chuck-image {
     height: 250px;
     margin: 0 auto 20px;
@@ -177,6 +177,7 @@ header > h1 {
     box-shadow: 0 0 10px #8b4513;
     border-radius: 10px;
     padding: 20px;
+    overflow: hidden;
     background-color: #ffdead;
     text-align: center;
     line-height: 1.5;
@@ -198,7 +199,6 @@ header > h1 {
     color: #fff;
     font-size: 24px;
     font-weight: 700;
-    transition: all 0.05s ease-in-out;
     cursor: pointer;
 } @media only screen and (max-width: 600px) { #joke-btn {
     margin: 0 auto 20px;
