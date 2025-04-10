@@ -23,7 +23,7 @@ const chuckImages = [
     "chuck3.jpg",
     "chuck4.jpg",
 ];
-let chuckIndex = 0;
+let chuckIndex = -1;
 
 // cycling chuck image > fetching new joke > error handling ------------------------------------------------------------
 
@@ -32,13 +32,13 @@ async function getNewJoke() {
 
         // cycling chuck image .........................................................................................
         chuckIndex++;
-        if (3 < chuckIndex) {chuckIndex = 0;}
+        if (3 < chuckIndex) chuckIndex = 0;
         chuckImage.src = chuckImages[chuckIndex];
 
         // fetching new joke ...........................................................................................
         const apiResponse = await fetch(apiUrl);
-        const jokeData = await apiResponse.json();
-        jokeText.textContent = jokeData.value;
+        const jokeJson = await apiResponse.json();
+        jokeText.textContent = jokeJson.value;
     
     // error handling ..................................................................................................
     } catch {
@@ -49,8 +49,8 @@ async function getNewJoke() {
 // adding event listeners ----------------------------------------------------------------------------------------------
 
 exitBtn.addEventListener("click", () => location.href = "../index.html");
-navBtn.addEventListener("click", () => {navMenu.classList.toggle("open");});
-navClose.addEventListener("click", () => {navMenu.classList.remove("open");});
+navBtn.addEventListener("click", () => navMenu.classList.toggle("open"));
+navClose.addEventListener("click", () => navMenu.classList.remove("open"));
 document.addEventListener('click', (event) => {
     if (!navMenu.contains(event.target) && !navBtn.contains(event.target)) {
         navMenu.classList.remove('open');
