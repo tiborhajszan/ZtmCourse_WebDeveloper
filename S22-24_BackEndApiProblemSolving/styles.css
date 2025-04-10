@@ -44,41 +44,36 @@ header > h1 {
     font-size: 24px;
 }}
 
-.exit-btn, #nav-btn {
+#exit-btn, #nav-btn {
     position: absolute;
     background-color: #333;
+    color: #f5deb3;
     font-size: 32px;
-    transition: all 0.05s ease-in-out;
+    transition: transform 0.05s ease-in-out;
     cursor: pointer;
-} @media only screen and (max-width: 600px) { .exit-btn, #nav-btn {
+} @media only screen and (max-width: 600px) { #exit-btn, #nav-btn {
     font-size: 24px;
 }}
 
-.exit-btn {
+#exit-btn {
     top: 30px;
     left: 20px;
-} @media only screen and (max-width: 600px) { .exit-btn {
+} @media only screen and (max-width: 600px) { #exit-btn {
     top: 20px;
 }}
-
-.exit-btn > a {
-    color: #f5deb3;
-    text-decoration: none;
-}
 
 #nav-btn {
     top: 32px;
     right: 20px;
-    color: #f5deb3;
 } @media only screen and (max-width: 600px) { #nav-btn {
     top: 21px;
 }}
 
-@media only screen and (min-width: 601px) { .exit-btn > a:hover, #nav-btn:hover {
+@media only screen and (min-width: 601px) { #exit-btn:hover, #nav-btn:hover {
     color: #d2b48c;
 }}
 
-.exit-btn:active, #nav-btn:active {
+#exit-btn:active, #nav-btn:active {
     transform: scale(1.5);
 }
 

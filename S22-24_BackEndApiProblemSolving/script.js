@@ -6,6 +6,7 @@
 
 // DOM elements and API URL --------------------------------------------------------------------------------------------
 
+const exitBtn = document.getElementById("exit-btn");
 const navBtn = document.getElementById("nav-btn");
 const navMenu = document.getElementById("nav-menu");
 const navClose = document.getElementById("nav-close");
@@ -28,14 +29,18 @@ let chuckIndex = 0;
 
 async function getNewJoke() {
     try {
+
         // cycling chuck image .........................................................................................
         chuckIndex++;
         if (3 < chuckIndex) {chuckIndex = 0;}
         chuckImage.src = chuckImages[chuckIndex];
+
         // fetching new joke ...........................................................................................
         const apiResponse = await fetch(apiUrl);
         const jokeData = await apiResponse.json();
         jokeText.textContent = jokeData.value;
+    
+    // error handling ..................................................................................................
     } catch {
         jokeText.textContent = "Chuck lost his sense of humor... Please try again!";
     }
@@ -43,6 +48,7 @@ async function getNewJoke() {
 
 // adding event listeners ----------------------------------------------------------------------------------------------
 
+exitBtn.addEventListener("click", () => location.href = "../index.html");
 navBtn.addEventListener("click", () => {navMenu.classList.toggle("open");});
 navClose.addEventListener("click", () => {navMenu.classList.remove("open");});
 document.addEventListener('click', (event) => {
