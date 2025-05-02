@@ -1,0 +1,33 @@
+########################################################################################################################
+Zero To Mastery Academy
+Complete Web Developer in 2025: Zero to Mastery
+DOM Manipulation | Exercise: DOM Selectors
+########################################################################################################################
+
+Lesson Task ############################################################################################################
+Execute the DOM selectors listed below on any webpage!
+
+.getElementsByTagName()
+.getElementsByClassName()
+.getElementById()
+
+.querySelector()
+.querySelectorAll()
+
+.parentElement
+.children
+
+.getAttribute()
+.setAttribute()
+
+.className
+.classList
+.classList.add()
+.classList.remove()
+.classList.toggle()
+
+.style.property = "value"
+
+.innerHTML = "content" //DANGEROUS
+
+// It is important to CACHE selectors in variables
