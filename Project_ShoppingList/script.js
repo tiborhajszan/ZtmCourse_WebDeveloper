@@ -4,7 +4,7 @@
 // Document Object Model | DOM Events | Shopping List Logic
 // #####################################################################################################################
 
-// caching selectors ###################################################################################################
+// selectors ###########################################################################################################
 
 const userInput = document.getElementById("userinput");
 const enterBtn = document.getElementById("enter-btn");
@@ -12,31 +12,29 @@ const shoppingList = document.getElementById("shopping-list");
 
 // callback functions ##################################################################################################
 
-function inputLength() {
-  return input.value.length;
-}
-
 // adding list item ----------------------------------------------------------------------------------------------------
 
-function createListElement() {
-  var li = document.createElement("li");
-  li.appendChild(document.createTextNode(input.value));
-  ul.appendChild(li);
-  input.value = "";
-}
+function createListItem() {
+  const listItem = document.createElement("li");
+  const innerText = document.createTextNode(userInput.value);
+  listItem.appendChild(innerText);
+  shoppingList.appendChild(listItem);
+  userInput.value = "";
+};
 
-function addListAfterClick() {
-  if (inputLength() > 0) {
-    createListElement();
-  }
-}
+// onkeypress callback -------------------------------------------------------------------------------------------------
 
-function addListAfterKeypress(event) {
-  if (inputLength() > 0 && event.keyCode === 13) {
-    createListElement();
-  }
-}
+function addItemOnKeypress(event) {
+  if (userInput.value.length !== 0 && event.key === "Enter") {createListItem();};
+};
 
-button.addEventListener("click", addListAfterClick);
+// onclick callback ----------------------------------------------------------------------------------------------------
 
-input.addEventListener("keypress", addListAfterKeypress);
+function addItemOnClick() {
+  if (userInput.value.length !== 0) {createListItem();};
+};
+
+// event listeners #####################################################################################################
+
+userInput.addEventListener("keypress", addItemOnKeypress);
+enterBtn.addEventListener("click", addItemOnClick);
