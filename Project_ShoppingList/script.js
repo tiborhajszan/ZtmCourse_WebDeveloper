@@ -6,9 +6,10 @@
 
 // selectors ###########################################################################################################
 
-const userInput = document.getElementById("userinput");
+const userInput = document.getElementById("user-input");
 const enterBtn = document.getElementById("enter-btn");
 const shoppingList = document.getElementById("shopping-list");
+const listItems = Array.from(document.getElementsByTagName("li"));
 
 // callback functions ##################################################################################################
 
@@ -19,6 +20,7 @@ function createListItem() {
   const innerText = document.createTextNode(userInput.value);
   listItem.appendChild(innerText);
   shoppingList.appendChild(listItem);
+  listItem.addEventListener("click", toggleLineThrough);
   userInput.value = "";
 };
 
@@ -28,13 +30,18 @@ function addItemOnKeypress(event) {
   if (userInput.value.length !== 0 && event.key === "Enter") {createListItem();};
 };
 
-// onclick callback ----------------------------------------------------------------------------------------------------
+// onclick callbacks ---------------------------------------------------------------------------------------------------
 
 function addItemOnClick() {
   if (userInput.value.length !== 0) {createListItem();};
+};
+
+function toggleLineThrough(event) {
+  event.target.classList.toggle("done");
 };
 
 // event listeners #####################################################################################################
 
 userInput.addEventListener("keypress", addItemOnKeypress);
 enterBtn.addEventListener("click", addItemOnClick);
+listItems.forEach(item => item.addEventListener("click", toggleLineThrough));
