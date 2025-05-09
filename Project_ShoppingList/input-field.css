@@ -19,9 +19,7 @@ Document Object Model | DOM Events | Input Field Styles
   display: block;
   width: 150px;
   margin: 0 auto 30px;
-  box-shadow:
-    0 0 5px #f5deb3 inset,
-    0 0 10px #333;
+  box-shadow: 0 0 5px #f5deb3 inset;
   border-radius: 10px;
   padding: 10px;
   background-color: #a0522d;
@@ -32,11 +30,13 @@ Document Object Model | DOM Events | Input Field Styles
   transition: all 0.1s ease-in-out;
 }
 #enter-btn:hover {
-  transform: scale(0.98);
-  box-shadow: 0 0 10px #333 inset;
-}
-#enter-btn:active {
-  box-shadow: 0 0 10px #a0522d inset;
+  box-shadow: 0 0 5px #8b4513 inset;
   background-color: #ffdead;
   color: #a0522d;
+}
+#enter-btn:active {
+  transform: scale(0.975);
+  box-shadow:
+    3px 3px 5px #8b4513 inset,
+    -3px -3px 5px 5px #f5deb3 inset;
 }
