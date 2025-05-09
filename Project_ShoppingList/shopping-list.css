@@ -1,0 +1,15 @@
+/*######################################################################################################################
+Zero To Mastery Academy
+Complete Web Developer in 2025: Zero to Mastery
+Document Object Model | DOM Events | Shopping List Styles
+######################################################################################################################*/
+
+#shopping-list {
+  width: calc(320px - 60px);
+  margin: 0 auto 30px;
+  box-shadow: 0 0 10px #8b4513;
+  border-radius: 5px;
+  padding: 10px;
+  list-style-position: inside;
+  font-size: 20px;
+}
