@@ -8,7 +8,7 @@ Document Object Model | DOM Events | Input Field Styles
   display: block;
   width: calc(320px - 60px);
   margin: 0 auto 20px;
-  box-shadow: 0 0 10px #8b4513;
+  box-shadow: 0 0 5px #8b4513;
   border-radius: 5px;
   padding: 10px;
   text-align: center;
@@ -19,24 +19,27 @@ Document Object Model | DOM Events | Input Field Styles
   display: block;
   width: 150px;
   margin: 0 auto 30px;
-  box-shadow: 0 0 5px #f5deb3 inset;
+  box-shadow: 0 0 5px #8b4513 inset;
   border-radius: 10px;
   padding: 10px;
-  background-color: #a0522d;
-  color: #ffdead;
+  background-color: #ffdead;
+  color: #a0522d;
   font-size: 20px;
   font-weight: 700;
   cursor: pointer;
   transition: all 0.1s ease-in-out;
 }
 #enter-btn:hover {
-  box-shadow: 0 0 5px #8b4513 inset;
-  background-color: #ffdead;
-  color: #a0522d;
+  transform: scale(1.025);
+  box-shadow:
+    0 0 2px #8b4513,
+    1px 1px #d2b48c inset,
+    -2px -2px 5px #8b4513 inset;
 }
 #enter-btn:active {
   transform: scale(0.975);
   box-shadow:
-    3px 3px 5px #8b4513 inset,
-    -3px -3px 5px 5px #f5deb3 inset;
+    2px 2px 5px #8b4513 inset,
+    -1px -1px #d2b48c inset;
+  background-color: #f5deb3;
 }
