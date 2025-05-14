@@ -1,0 +1,14 @@
+{
+  "name": "express",
+  "version": "1.0.0",
+  "description": "Learning Express.js",
+  "main": "express-server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tibor Hajszan",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
