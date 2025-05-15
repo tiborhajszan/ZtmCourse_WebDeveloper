@@ -8,22 +8,26 @@ const express = require("express");
 const api = express();
 api.listen(3000);
 
-// express middleware ##################################################################################################
+// middleware > parsing request body ###################################################################################
 
-api.use((request, response, next) => {
-  console.log("I am a middleware!");
-  next();
-});
+api.use(express.urlencoded({extended: false}));
+api.use(express.json());
 
-// html server #########################################################################################################
+// get root ############################################################################################################
 
-api.get("/", (requst, response) => {
+api.get("/", (request, response) => {
   response.send("<h1>Hello World!</h1>");
 });
 
-// json server #########################################################################################################
+// get /user ###########################################################################################################
 
 api.get("/user", (request, response) => {
-  const user = {name: "John Doe", hobby: "Coding"}
+  const user = {name: "John Doe", hobby: "Coding"};
   response.send(user);
+});
+
+// post /user ##########################################################################################################
+
+api.post("/user", (request, response) => {
+  response.send(request.body);
 });
