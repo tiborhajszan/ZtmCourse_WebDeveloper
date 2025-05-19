@@ -8,7 +8,7 @@ const express = require("express");
 const api = express();
 api.listen(3000);
 
-// middleware > parsing request body ###################################################################################
+// middleware > parsing body > static files ############################################################################
 
 api.use(express.urlencoded({extended: false}));
 api.use(express.json());
@@ -18,13 +18,13 @@ api.use("/static", express.static(__dirname));
 // get /method #########################################################################################################
 
 api.get("/method", (request, response) => {
-  response.status(200).send("Request Method: " + request.method);
+  response.status(200).send(`Request Method: ${request.method}`);
 });
 
 // get /url ############################################################################################################
 
 api.get("/url", (request, response) => {
-  response.status(200).send("Request URL: " + request.url);
+  response.status(200).send(`Request URL: ${request.url}`);
 });
 
 // get /params #########################################################################################################
