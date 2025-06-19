@@ -12,7 +12,7 @@ function q1() {
   if (a > 1) {
     a = 3;
   };
-  console.log(a); // 3
+  console.log(a); // a = 3
 };
 q1();
 
@@ -23,7 +23,7 @@ function q2() {
   b = 5;
 };
 function q22() {
-  console.log(b); // 5
+  console.log(b); // b = 5
 };
 q2();
 q22();
@@ -34,7 +34,7 @@ function q3() {
   global.c = "hello";
 };
 function q32() {
-  console.log(c); // hello
+  console.log(c); // c = hello
 };
 q3();
 q32();
@@ -44,17 +44,17 @@ q32();
 let d = 1;
 function q4() {
   let d = "test";
-  console.log(d); // test
+  console.log(d); // d = test
 }
 q4();
-console.log(d); // 1
+console.log(d); // d = 1
 
 // #5 ------------------------------------------------------------------------------------------------------------------
-// Reminder: With var keyword, if statements do not create new scope.
+// Reminder: With "var" keyword, if statements do not create new scope.
 
 var e = 2;
 if (true) {
   var e = 5;
-  console.log(e); // 5
+  console.log(e); // e = 5
 };
-console.log(e); // 5
+console.log(e); // e = 5
